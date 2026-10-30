@@ -1,0 +1,83 @@
+body{
+  background-color:maroon;
+  color:white;
+}
+h1{
+  border:3px solid white;
+  border-radius:50px;
+  text-align:center;
+  padding:20px;
+  margin:20px;
+  box-shadow:0 5px 10px black;
+  font-weight:lighter;
+  font-family:georgia;
+}
+.pitizzaria{
+  border:3px solid gray;
+  border-radius:50px;
+padding:20px;
+  margin:30px;
+  text-align:center;
+  background-color:brown;
+  font-family:arial;
+  font-weight:bold;
+  transition:0.3s;
+  box-shadow:0 5px 12px black;
+}
+
+.pitizzaria:hover{
+
+  transform:scale(1.06);
+}
+
+.doces{
+  border:4px double gray;
+  border-radius:50px;
+  padding:20px;
+  margin:30px;
+  font-family:georgia;
+  font-weight:bold;
+  box-shadow:0 5px 12px black;
+}
+.doces:hover{
+
+  transform:scale(1.05);
+}
+.rodapé{
+  font-size:20px;
+  padding:15px;
+}
+
+.rodapé h2{
+
+  text-align:center;
+}
+
+.menu a{
+
+  text-decoration:none;
+  color:white;
+
+}
+.menu a:hover{
+
+  background-color:blue;
+  padding:7px;
+  border-radius:10px;
+}
+
+@media(max-width:600px){
+
+  p{
+
+    max-width:500px;
+    font-size:20px;
+  }
+
+  .menu{
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+}

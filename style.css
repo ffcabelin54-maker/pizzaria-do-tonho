@@ -45,18 +45,20 @@ padding:20px;
 }
 .rodapé{
   font-size:20px;
-  padding:15px;
+  padding:7px;
+
 }
 .rodapé ul{
 
   text-align:center;
   list-style-position:inside;
 }
-
 .rodapé h2{
 
   text-align:center;
 }
+
+
 
 .menu a{
 

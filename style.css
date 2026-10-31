@@ -38,6 +38,7 @@ padding:20px;
   font-family:georgia;
   font-weight:bold;
   box-shadow:0 5px 12px black;
+  list-style-position:inside;
 }
 .doces:hover{
 

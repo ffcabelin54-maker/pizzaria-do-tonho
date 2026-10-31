@@ -23,6 +23,7 @@ padding:20px;
   font-weight:bold;
   transition:0.3s;
   box-shadow:0 5px 12px black;
+  list-style-position:inside;
 }
 
 .pitizzaria:hover{
@@ -38,7 +39,6 @@ padding:20px;
   font-family:georgia;
   font-weight:bold;
   box-shadow:0 5px 12px black;
-  list-style-position:inside;
 }
 .doces:hover{
 

@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>pizzaria do tonho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"href="style.css">
   </head>
   <body id="inicio">
@@ -16,6 +17,7 @@
     <p>aqui na pizzaria do tonho vc encontra os gosto e o preço que cabe no seu bolso,venha fazer seu pedido!</p>
     <div class="pitizzaria" id="pitizzaria">
       <h2>pizza salgada</h2>
+      <img src="Pizza.jpeg" alt="pitizzaria">
       <ul>
         <li>Marguerita — molho, mussarela, tomate e orégano — R$ 35</li>
         <li>Calabresa — molho, mussarela e calabresa — R$ 38</li>
@@ -23,6 +25,14 @@
         <li>Frango com catupiry — frango desfiado, catupiry e mussarela — R$ 45</li>
         <li>Quatro queijos — mussarela, parmesão, provolone e gorgonzola — R$ 42</li>
       </ul>
+      <select id="saborSalgado">
+      <option>Marguerita — molho, mussarela, tomate e orégano</option>
+      <option>Calabresa — molho, mussarela e calabresa </option>
+      <option>Portuguesa — presunto, milho, ervilha, ovo e mussarela</option>
+      <option>Frango com catupiry — frango desfiado, catupiry e mussarela</option>
+      <option>Quatro queijos — mussarela, parmesão, provolone e gorgonzola</option>
+      </select>
+      <button onclick="fazerPedido()">Fazer pedido</button>
     </div>
     <div class="doces" id="doces">
     <h2>pizzas doces</h2>
@@ -33,9 +43,17 @@
       <li>Morango com chocolate — morango e chocolate — R$ 36</li>
       <li>Leite Ninho — chocolate branco e leite Ninho — R$ 34</li>
     </ul>
+      <select id="pizza">
+        <option>chocolate ao leite e granulado</option>
+        <option>chocolate, coco e leite condensado</option>
+        <option>Banana com canela — banana, açúcar e canela</option>
+        <option>Leite Ninho — chocolate branco e leite Ninho</option>
+      </select>
+    <button onclick="fazerpedidos()">fazer pedidos</button>
     </div>
-    <div class="pitizzaria salgado" id="Salgado">
+    <div class="pitizzaria salgado" id="salgado">
       <h2>Salgados</h2>
+      <img src="Salgados.jpeg" alt="salgados">
       <ul>
         <li>Coxinha — R$ 5</li>
         <li>Kibe — R$ 5</li>
@@ -43,7 +61,56 @@
         <li>Enroladinho — R$ 5</li>
         <li>Pão de queijo — R$ 4</li>
       </ul>
+      <select id="saborPetisco">
+        <option>Coxinha</option>
+        <option>Kibe</option>
+        <option>Risole</option>
+        <option>Enroladinho</option>
+        <option>Pão de queijo</option>
+      </select>
+      <button onclick="fazerPetisco()">fazer pedido</button>
     </div>
+    <div class="bebidas">
+      <h2>bebida</h2>
+      <ul>
+        <li>suco-R$20</li>
+        <li>água-R$18</li>
+        <li>guarana-R$18</li>
+      </ul>
+      <select id="bebida">
+        <option>suco</option>
+        <option>água</option>
+        <option>guarana</option>
+      </select>
+      <button onclick="escolherbebida()">escolher bebida</button>
+    </div>
+    <div class="pagar">
+      <h2>pix ou dinheiro</h2>
+      <select id="pagamento">
+        <option>dinheiro</option>
+        <option>pix</option>
+      </select>
+      <button onclick="pagamentos()">
+         pagamentos</button>
+    </div>
+    <div class="novos">
+      <h2>novos sabores</h2>
+      <ul>
+        <li>Pudim Moça-R$25</li>
+        <li>Brigadeirão Moça-R$30</li>
+        <li>McColosso-R$35</li>
+        <li>Casquinha-R$19</li>
+      </ul>
+      <select id="pedido">
+        <option>pudim Moça</option>
+        <option>Brigadeirão Moça</option>
+        <option>McColosso-R</option>
+        <option>Casquinha</option>
+      </select>
+      <button onclick="fazerpedido()">fazer pedido
+      </button>
+    </div>
+    <script src="script.js"></script>
     <div class="rodapé" id="rodapé">
       <h2>Horário de funcionamento</h2>
       <ul>
@@ -56,4 +123,4 @@ Entregas: 18h30 às 22h45.</li>
       </ul>
     </div>
   </body>
-  </html>
+</html>
